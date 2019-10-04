@@ -17,8 +17,6 @@ namespace CSharp_3._5
             Thread sum = new Thread(() => { ThreadSum(x); });
             fact.Start();
             sum.Start();
-            fact.Join();
-            sum.Join();
         }
 
         static void ThreadFact(int x)
